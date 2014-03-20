@@ -1,0 +1,56 @@
+$ glpsol --minisat -m oyako-mahoujin.mod
+GLPSOL: GLPK LP/MIP Solver, v4.52
+Parameter(s) specified in the command line:
+ --minisat -m oyako-mahoujin.mod
+Reading model section from oyako-mahoujin.mod...
+93 lines were read
+Generating a...
+Generating b...
+Generating sum_col...
+Generating sum_row...
+Generating sum_dia1...
+Generating sum_dia2...
+Generating tl_lt_tr...
+Generating tr_lt_bl...
+Generating tl_lt_br...
+Generating sum_col_3...
+Generating sum_row_3...
+Generating sum_dia3_2...
+Generating c13...
+Model has been successfully generated
+Will search for ANY feasible solution
+Translating to CNF-SAT...
+Original problem has 73 rows, 625 columns, and 3601 non-zeros
+51 partitioning equalities
+Solving CNF-SAT problem...
+Instance has 11667 variables, 86651 clauses, and 340192 literals
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |   86430   339195 |   28810       0        0     0.0 |  0.000 % |
+|       102 |   85791   336925 |   31691     102     6098    59.8 |  1.826 % |
+|       253 |   85791   336925 |   34860     253    12807    50.6 |  1.826 % |
+|       478 |   85791   336925 |   38346     478    18436    38.6 |  1.826 % |
+|       816 |   85791   336925 |   42181     816    31174    38.2 |  1.826 % |
+|      1325 |   85791   336925 |   46399    1324    48853    36.9 |  1.834 % |
+|      2084 |   85791   336925 |   51039    2082    75370    36.2 |  1.843 % |
+|      3223 |   85767   336829 |   56143    3188   122776    38.5 |  1.843 % |
+|      4931 |   85767   336829 |   61757    4895   201638    41.2 |  1.860 % |
+|      7494 |   85744   336737 |   67932    7441   369116    49.6 |  1.877 % |
+|     11340 |   85720   336641 |   74726   11263   630313    56.0 |  1.886 % |
+|     17106 |   85712   336609 |   82198   17014  1064730    62.6 |  1.946 % |
+|     25755 |   85638   336316 |   90418   25622  1674264    65.3 |  1.980 % |
+|     38731 |   85596   336148 |   99460   38578  2823835    73.2 |  1.997 % |
+|     58192 |   85586   336108 |  109406   58039  4280950    73.8 |  1.997 % |
+|     87384 |   85586   336108 |  120347   87231  7105771    81.5 |  1.997 % |
+|    131176 |   85575   336067 |  132381   32742  2486788    76.0 |  2.006 % |
+|    196861 |   85551   335971 |  145619   98420  9073321    92.2 |  2.023 % |
+|    295387 |   85512   335818 |  160181   78091  6183883    79.2 |  2.066 % |
+|    443177 |   85464   335626 |  176199   92107  7813338    84.8 |  2.100 % |
+|    664862 |   85396   335354 |  193819  163327 13222455    81.0 |  2.160 % |
+==============================================================================
+UNSATISFIABLE
+Time used:   222.7 secs
+Memory used: 37.4 Mb (39188047 bytes)
+
